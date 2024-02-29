@@ -10,11 +10,10 @@ app.use('/user',authRouter);
 
 const DB =
   "mongodb+srv://sasidhar:S%40s!dhar4463@cluster0.44frqsi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-
 mongoose
   .connect(DB)
   .then(() => {
-    console.log("Connection Successful");
+    console.log("Connection = Successful");
   })
   .catch((e) => {
     console.log(e);
